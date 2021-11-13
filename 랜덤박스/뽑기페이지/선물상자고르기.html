@@ -45,32 +45,98 @@
                 width: 100px;
                 height: 50px;
             }
-            .상품1 {
-                display: block;
-                width: 300px;
+            .선물상자틀 {
+                margin-top: 100px;
+                height: 400px;
+                width: 100%;
+                display: grid;
+                grid-template-rows: 1fr;
+                grid-template-columns: 1fr 1fr 1fr;
+                justify-items: center;
+                justify-content: space-between;
             }
-            .상품이름 {
-                font-size: 50px;
-                margin: 30px;
+            .랜덤박스틀 {
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-rows: 4fr 1fr 1fr;
+                justify-items: center;
+                align-items: center;
+            }
+            .랜덤박스틀아이템 > .test {
+                width: 60%;
+            }
+            .랜덤박스틀아이템:nth-child(2) {
+                text-decoration: none;
+                font-size: 30px;
+            }
+            .내부이미지 {
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
             }
         </style>
     </head>
     <body>
-        <div class="로고">
-            <img class="선물상자" src="./이미지/선물상자.png">
-            <span class="랜">랜</span>
-            <span class="덤">덤</span>
-            <span class="박">박</span>
-            <span class="스">스</span>
-            <img class="선물상자" src="./이미지/선물상자.png"><br>
-
-            <div class="상품상자">
-                <img class="상품1" src="./이미지/선물상자.png">
-                <div class="상품이름">무료박스</div>
-                <button class="상품버튼">상품</button>
+        <a href="../메인.html">
+            <div class="로고">
+                <img class="선물상자" src="../이미지/선물상자.png">
+                <span class="랜">랜</span>
+                <span class="덤">덤</span>
+                <span class="박">박</span>
+                <span class="스">스</span>
+                <img class="선물상자" src="../이미지/선물상자.png"><br>
             </div>
+        </a>
+        <div class="선물상자틀">
+            <div class="아이템">
 
+                <div class="랜덤박스틀">
+                    <img class="랜덤박스틀아이템 내부이미지" src="../이미지/선물상자.png">
+                    <div class="랜덤박스틀아이템">
+                        <a href="./뽑기.html">무료박스</a>
+                    </div>
+                    <div class="랜덤박스틀아이템">
+                        <a href="../경품.html">
+                            <button class="상품버튼">상품</button>
+                        </a>
+                    </div>
+                </div>
 
+            </div>
+            <div class="아이템">
+
+                <div class="랜덤박스틀">
+                    <img class="랜덤박스틀아이템 내부이미지" src="../이미지/선물상자.png">
+                    <div class="랜덤박스틀아이템">
+                        <a href="./뽑기.html">5000p박스</a>
+                    </div>
+                    <div class="랜덤박스틀아이템">
+                        <a href="../경품.html">
+                            <button class="상품버튼">상품</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="아이템">
+
+                <div class="랜덤박스틀">
+                    <img class="랜덤박스틀아이템 내부이미지" src="../이미지/선물상자.png">
+                    <div class="랜덤박스틀아이템">
+                        <a href="./뽑기.html">10000p박스</a>
+                    </div>
+                    <div class="랜덤박스틀아이템">
+                        <a href="../경품.html">
+                            <button class="상품버튼">상품</button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </body>
+
+    </div>
+</body>
 </html>
